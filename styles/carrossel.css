@@ -1,0 +1,27 @@
+.carrossel{
+    text-align: center;
+    color: var(--cor--fonte-princial);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper{
+    padding-top: 20px;
+}
+
+
+.swiper-slide{
+    text-align: center;   
+}
+
+.swiper-texto-imagem{
+    color: var(--cor--fonte-princial);
+    font-size: 15px;
+    font-weight: 300;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+}

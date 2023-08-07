@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual do Bar</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <!-- Itens do menu (ancoras) -->
+            <ul class="lista__menu">
+                <li class="lista__menu__titulo"></li>
+                <li class="lista__menu__item">
+                    <a href="#" class="lista__menu__link">receitas</a>
+                </li>
+            <img src="./img/icons/white-russian 1.svg" alt="icone do drink white russian referenciando a logotipo do site" class="container__imagem">
+                <li class="lista__menu__item">
+                    <a href="#" class="lista__menu__link">Utensilios</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="banner__container">
+        <div class="banner">
+            <h1 class="banner__titulo">Quais são os drinks preferidos do público?</h1>
+            <p class="banner__texto">Aqui você pode encontrar alguns dos drinks mais famosos e suas histórias</p>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2>Os queridinhos do mundo</h2>
+        <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img src="img/drinks/negroni.svg" alt="Foto do drink negroni" title="Negroni" class="swiper-slide-imagem">
+            <p class="swiper-texto-imagem">O fabuloso</p>
+            <a class="swiper-texto-imagem" href="https://iba-world.com/negroni/">Negroni</a>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/drinks/dry-martini.svg" alt="Foto do drink dry-martini" title="Dry-Martini" class="swiper-slide-imagem">
+            <p class="swiper-texto-imagem">O poderoso</p>
+            <a class="swiper-texto-imagem" href="https://iba-world.com/dry-martini/">Dry-Martini</a>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/drinks/old-fash.svg" alt="Foto do drink old-fashioned" title="Old-fashioned" class="swiper-slide-imagem">
+            <p class="swiper-texto-imagem">O elegante</p>
+            <a class="swiper-texto-imagem" href="https://iba-world.com/old-fashioned/">Old Fashioned</a>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/drinks/margarita.svg" alt="Foto do drink margarita" title="Margarita" class="swiper-slide-imagem">
+            <p class="swiper-texto-imagem">A deliciosa</p>
+            <a class="swiper-texto-imagem" href="https://iba-world.com/margarita/">margarita</a>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/drinks/classic-Daiquiri.svg" alt="Foto do drink Daiquiri" title="Daiquiri" class="swiper-slide-imagem">
+            <p class="swiper-texto-imagem">O clássico</p>
+            <a class="swiper-texto-imagem" href="https://iba-world.com/daiquiri//">Daiquiri</a>
+        </div>
+    </div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    </section>
+
+
+
+    <script type="module">
+        import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js";
+        
+        const swiper = new Swiper(".swiper", {
+          spaceBetween: 50,
+          slidesPerView: 2,
+          pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',}
+        });
+    </script>
+</body>
+</html>

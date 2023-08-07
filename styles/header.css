@@ -1,0 +1,23 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.lista__menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 4.9rem;
+    align-items: center;
+}
+
+
+.lista__menu__link{
+    margin: 0.8rem;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--cor--fonte-princial);
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: 1px solid white;
+}
