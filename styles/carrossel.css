@@ -4,7 +4,13 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-    padding: 1em 0 0.5em 0;
+    padding: 1em 0 1em 0;
+}
+
+.carrossel__titulo__texto{
+    font-size: 13px;
+    padding: 0.1rem 3rem;
+    font-weight: 300;
 }
 
 .swiper{
@@ -23,5 +29,40 @@
     padding-top: 10px;
     display: flex;
     justify-content: center;
-    padding-left: 30px;
+    padding-left: 35px;
+}
+
+.swiper-slide-imagem{
+    border: 1px solid var(--cor-branco);
+}
+
+
+
+@media screen and (min-width: 1728px){
+    .carrossel{
+        font-size: 50px;
+        padding: 1px;
+    }
+
+    .carrossel__titulo__texto{
+        font-size: 25px;
+    }
+
+    .swiper-texto-imagem{
+        font-size: 25px;
+        display: flex;
+        padding: 0.1vw;
+        
+    }
+
+    .swiper-slide-imagem{
+        width: 20vw;
+    }
+
+    .swiper{
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem 30rem 2rem 30rem;
+    }
+
 }

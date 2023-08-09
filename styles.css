@@ -1,6 +1,7 @@
 @import url(styles/header.css);
 @import url(styles/banner.css);
 @import url(styles/carrossel.css);
+@import url(styles/texto.css);
 
 
 :root{
@@ -8,6 +9,7 @@
     --preto: #000000;
     --roxo: #322653;
     --cor--fonte-princial: #E5E5CB;
+    --cor-branco: #ffffff;
 
     --fonte-principal: "Abel"
 }

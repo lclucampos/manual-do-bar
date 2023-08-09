@@ -21,11 +21,11 @@
             <ul class="lista__menu">
                 <li class="lista__menu__titulo"></li>
                 <li class="lista__menu__item">
-                    <a href="#" class="lista__menu__link">receitas</a>
+                    <a href="./index.html" class="lista__menu__link">saguão</a>
                 </li>
             <img src="./img/icons/white-russian 1.svg" alt="icone do drink white russian referenciando a logotipo do site" class="container__imagem">
                 <li class="lista__menu__item">
-                    <a href="#" class="lista__menu__link">Utensilios</a>
+                    <a href="#" class="lista__menu__link">utensilios</a>
                 </li>
             </ul>
         </div>
@@ -38,8 +38,10 @@
         </div>
     </section>
 
+    <!-- CARROSSEL DE DRINKS -->
     <section class="carrossel">
-        <h2>Os queridinhos do mundo</h2>
+        <h2 class="carrossel__titulo">Os queridinhos do mundo</h2>
+        <p class="carrossel__titulo__texto">Abaixo temos alguns dos drinks mais consumidos no mundo todo</p>
         <!-- Slider main container -->
     <div class="swiper">
     <!-- Additional required wrapper -->
@@ -75,7 +77,45 @@
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
+    </section>
 
+
+    <section class="container__texto">
+        <h2 class="container__texto__bar">Para criar drinks, é preciso ter alguns equipamentos básicos, como um coqueteleira, um dosador, um mixer, um coador e um copo medidor. Além disso, é importante ter uma variedade de bebidas, como destilados, licores, vinhos, espumantes, sucos, xaropes e água tônica. Com esses ingredientes, é possível combinar diferentes sabores, cores e texturas, criando drinks que agradam aos olhos e ao paladar.</h2>
+        <img class="container__bartender__imagem" src="./img/corpo/bartender.svg" alt="bartender preparando drink">
+    </section>
+
+
+        <!-- CARROSSEL DE LIVROS -->
+    <section class="carrossel">
+        <h2>livros sobre o assunto</h2>
+        <p class="carrossel__titulo__texto">Os melhores livros sobre a arte da criação de drinks</p>
+        <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img src="img/livros/manual do bar.svg" alt="livro manual do bar" title="Manual do Bar" class="swiper-slide-imagem">
+            <a class="swiper-texto-imagem" href="https://www.amazon.com.br/Manual-bar-Aristides-Oliveira-Pacheco/dp/8573596651/ref=sr_1_1?__mk_pt_BR=ÅMÅŽÕÑ&crid=Y4QK76JGE1II&keywords=manual+do+bar&qid=1691418221&sprefix=manual+do+ba%2Caps%2C218&sr=8-1">Manual do Bar</a>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/livros/mixologia.svg" alt="livro Mixologia: O universo do bartender cientista" title="Mixologia: O universo do bartender Cientista" class="swiper-slide-imagem">
+            <a class="swiper-texto-imagem" href="https://www.amazon.com.br/Mixologia-universo-do-bartender-cientista/dp/8599723413/ref=sr_1_8?__mk_pt_BR=ÅMÅŽÕÑ&crid=Y4QK76JGE1II&keywords=manual+do+bar&qid=1691418282&sprefix=manual+do+ba%2Caps%2C218&sr=8-8">Mixologia: O universo do bartender Cientista</a>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/livros/cahcaca.svg" alt="livro Cachaça: História, gastronomia e turismo" title="Cachaça: História, gastronomia e turismo" class="swiper-slide-imagem">
+            <a class="swiper-texto-imagem" href="https://www.amazon.com.br/Cachaça-História-gastronomia-Jairo-Martins/dp/8539624079">Cachaça: História, gastronomia e turismo</a>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/livros/manual do bartender.svg" alt="Livro O mundo do bartender" title="O Mundo do bartender" class="swiper-slide-imagem">
+            <a class="swiper-texto-imagem" href="https://www.amazon.com.br/mundo-do-bartender-Luisa-Corrêa/dp/6555362138/ref=asc_df_6555362138/?tag=googleshopp00-20&linkCode=df0&hvadid=379765803332&hvpos=&hvnetw=g&hvrand=4152666318817207983&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001726&hvtargid=pla-1186194654173&psc=1">O mundo do bartender</a>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/livros/cocktail guide.svg" alt="Livro The Essential Cocktail Book: A Complete Guide to Modern Drinks with 150 Recipes" title="The Essential Cocktail Book: A Complete Guide to Modern Drinks with 150 Recipes" class="swiper-slide-imagem">
+            <a class="swiper-texto-imagem" href="https://www.amazon.com.br/dp/0399579311?tag=bienal-20&linkCode=ogi&th=1&psc=1&keywords=livros%20drinks">The Essential Cocktail Book</a>
+        </div>
+    </div>
     </section>
 
 
@@ -84,7 +124,7 @@
         import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js";
         
         const swiper = new Swiper(".swiper", {
-          spaceBetween: 50,
+          spaceBetween: 40,
           slidesPerView: 2,
           pagination: {
                 el: '.swiper-pagination',

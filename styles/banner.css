@@ -1,6 +1,7 @@
 .banner{
     text-align: center;
     color: var(--cor--fonte-princial);
+    display: block;
 }
 
 .banner__titulo{
@@ -13,4 +14,11 @@
     font-size: 15px;
     padding: 0.2rem 3rem;
     font-weight: 300;
+}
+
+
+@media screen and (min-width: 1728px){
+    .banner{
+        display: none;
+    }
 }
